@@ -11,7 +11,7 @@ function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className="">
+    <div className=" text-black">
       <Container>
         <div className="flex py-[10px] justify-between items-center">
           {" "}
@@ -60,7 +60,7 @@ function Navbar() {
                 }`}
               >
                 {" "}
-                <Link href="/contact">Contat us </Link>{" "}
+                <Link href="/contact">Contact us </Link>{" "}
               </li>
             </ul>
           </div>
