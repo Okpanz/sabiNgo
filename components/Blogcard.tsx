@@ -31,8 +31,7 @@ function Blogcard() {
           </p>
 
           <Button
-            classes="mx-auto text-[15px] my-4 mt-8
-           "
+            classes="mx-auto text-[15px] my-4 mt-8"
             type="button"
             label="View Details"
             color="secondry"
