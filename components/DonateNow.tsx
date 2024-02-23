@@ -94,13 +94,13 @@ function DonateNow() {
                     <Image
                       className="rounded-full w-[75px] h-[75px]"
                       src={Donner}
-                      alt=""
+                      alt="Donations"
                     />
 
                     <Image
                       className="rounded-full w-[75px] h-[75px]"
                       src={Donner}
-                      alt=""
+                      alt="Donations"
                     />
 
                     <div className="flex  font-[600] w-[75px] h-[75px] bg-primary items-center text-white rounded-full justify-center ">

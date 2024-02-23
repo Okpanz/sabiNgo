@@ -6,7 +6,7 @@ import Button from "./Button";
 function DonateCard() {
   return (
     <div className="max-w-md min-w-md font-body  shadow-md rounded-md ">
-      <Image className="rounded-md w-full" src={CardImg} alt="" />
+      <Image className="rounded-md w-full" src={CardImg} alt="Card image" />
 
       <div className="p-5">
         <div className="flex flex-row  justify-between ">

@@ -16,19 +16,19 @@ import Image from "next/image";
 import Container from "@/components/Container";
 function Page() {
 
-  const Volunteers = 
-  [{
-    id: "1",
-    image: <Image src={man1} className="" />,
-    alt: "man1"
-  },
-  {
-    id: "1",
-    image: <Image src={man2} className="" />,
-    alt: "man1"
-  },
- 
-]
+  const Volunteers = [
+    {
+      id: "1",
+      image: <Image src={man1} alt="man1" className="" />,
+      alt: "man1"
+    },
+    {
+      id: "2",
+      image: <Image src={man2} alt="man2" className="" />,
+      alt: "man2"
+    }
+  ];
+
 const Stat = [
   {
     id: "1",
@@ -50,13 +50,13 @@ const Stat = [
   <Navbar />
     
     <div className="bg-white h-full text-black">
-    <Image src={aboutframe} alt="" />{" "}
+    <Image src={aboutframe} alt="about frame" />{" "}
     <div className="md:w-[80%] mx-auto py-10">
   <Container>
       <h2 className="md:text-6xl text-3xl  font-heading font-semibold tracking-tighter leading-snug">Sabi NGO is a NON Profit Organisation</h2>
       <div className="md:flex items-stretch">
   <div className="flex-1 relative"> 
-    <Image src={aboutkids} layout="fill" objectFit="cover" className="h-full w-full" /> 
+    <Image src={aboutkids} alt="image" layout="fill" objectFit="cover" className="h-full w-full" /> 
   </div>
   <div className="flex-1 md:mx-7">
     <p className="font-semibold font-heading">
@@ -65,14 +65,14 @@ const Stat = [
     <p className="text-[.7rem] my-7 text-justify">Lorem ipsum dolor sit amet consectetur. Adipiscing ullamcorper fames mauris adipiscing amet egestas. Adipiscing cras duis sed tristique lectus orci bibendum. Massa massa feugiat egestas integer eget. Aenean fermentum interdum et eget diam vulputate. Risus ultricies lectus dolor enim. Mattis tellus diam lacus neque sit fusce montes. Adipiscing mauris orci.</p>
     <div className="flex flex-col md:flex-row  justify-evenly items-center">
       <div className="h-100 w-[18rem] m-1 h-[18rem] bg-[#E57373] relative rounded-md">
-      <Image src={elipse1} className="absolute top-7 left-10"/>
-      <Image src={elipse2} className="absolute top-0 overflow-hidden left-0"/>
+      <Image src={elipse1} alt="volunteer1" className="absolute top-7 left-10"/>
+      <Image src={elipse2} alt="Volunteer" className="absolute top-0 overflow-hidden left-0"/>
       <h1 className="font-heading font-semibold text-xl text-white absolute top-9 left-14">Our Mission</h1>
       <p className="text-wrap text-white text-xs absolute bottom-7 p-2">Lorem ipsum dolor sit amet consectetur. Adipiscing ullamcorper fames mauris adipiscing amet egestas. Adipiscing cras duis sed tristique lectus orci bibendum. Massa massa feugiat egestas integer eget. Aenean fermentum interdum et eget diam vulputate. Risus ultricies lectus dolor enim. Mattis tellus diam lacus neque sit fusce montes. Adipiscing mauris orci.</p>
       </div>
       <div className="h-100 w-[18rem] m-1 h-[18rem] bg-[#FFB64C] relative rounded-md">
-      <Image src={elipse3} className="absolute top-7 left-10"/>
-      <Image src={elipse4} className="absolute top-0 overflow-hidden left-0"/>
+      <Image src={elipse3} alt="Volunteer" className="absolute top-7 left-10"/>
+      <Image src={elipse4} alt="Volunteer" className="absolute top-0 overflow-hidden left-0"/>
       <h1 className="font-heading font-semibold text-xl text-white absolute top-9 left-14">Our Mission</h1>
       <p className="text-wrap text-white text-xs absolute bottom-7 p-2">Lorem ipsum dolor sit amet consectetur. Adipiscing ullamcorper fames mauris adipiscing amet egestas. Adipiscing cras duis sed tristique lectus orci bibendum. Massa massa feugiat egestas integer eget. Aenean fermentum interdum et eget diam vulputate. Risus ultricies lectus dolor enim. Mattis tellus diam lacus neque sit fusce montes. Adipiscing mauris orci.</p>
       </div>
@@ -109,14 +109,14 @@ const Stat = [
     <div className="h-screen bg-[#EEEAFC] flex items-center">
           <div className="flex items-center">
             <div className="relative w-2/3 overflow-hidden">
-              <Image src={frame12} />
+              <Image src={frame12} alt="frame"/>
               <div className="absolute inset-0 bg-[#040bf9] opacity-50"></div>
               <h1 className="text-white text-left z-10 mix-blend-normal absolute top-[25%] md:text-5xl font-heading right-0">What People are Saying About Us</h1>
             </div>
           </div>
         <div className="w-[80%]">
             <div className="w-full font-heading">
-              <Image src={avatar}/>
+              <Image src={avatar} alt="image alt"/>
               <p>Lorem ipsum dolor sit amet consectetur. Adipiscing ullamcorper fames mauris adipiscing amet egestas. Adipiscing cras duis sed tristique lectus orci bibendum. Massa massa feugiat egestas integer eget. Aenean fermentum interdum et eget diam vulputate. Risus ultricies lectus dolor enim. Mattis tellus diam lacus neque sit fusce montes. Adipiscing mauris orci.</p>
               <div className="flex w-full items-center justify-end my-5">
                 <div>
