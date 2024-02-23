@@ -18,7 +18,7 @@ function Feedback() {
           <div className="flex w-full relative">
             <Image className="rounded-md" src={Title} alt="" />
 
-            <h1 className=" font-[600] text-[44px] absolute font-heading  w-13  text-white">
+            <h1 className=" font-[600] text-[44px] absolute font-heading  w-[]  text-white">
               What People Say About <br></br>Us
             </h1>
           </div>

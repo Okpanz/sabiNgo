@@ -33,7 +33,7 @@ function Button({
       type={type}
       disable={disabled}
       className={clsx(
-        "  flex   font-montse font-[500]   gap-1 py-[12px] px-[17px]  text-[16px] rounded-lg  border-primary border-2   ",
+        "  flex   font-montse font-[500]   gap-1 py-[12px] px-[17px]  lg:text-[16px]  md:text-[12px] text-[9px] rounded-lg  whitespace-nowrap   items-center wrap border-primary border-2  white  ",
         classes || "",
         disabled ? "opacity-40 hover:!opacity-40 pointer-events-none" : "",
         btnColor[`${color}`] || ""
@@ -43,7 +43,7 @@ function Button({
       <div> {label}</div>
 
       <span> {icon} </span>
-      <ArrowIconleft className="" color="white" />
+      <ArrowIconleft className="  lg:h-4 lg:w-4    h-3 w-3" color="white" />
     </button>
   );
 }
