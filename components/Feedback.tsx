@@ -3,49 +3,35 @@ import Container from "./Container";
 import Image from "next/image";
 import Title from "@/public/images/Title.png";
 import RevImage from "@/public/images/Ellipse 98.png";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
 function Feedback() {
   return (
-    <div
-      className="bg-[  #EEEAFC] 
-    "
-    >
-      <Container>
-        <div
-          className="flex gap-4
-        "
-        >
-          <div className="flex w-full relative">
-            <Image className="rounded-md" src={Title} alt="" />
-
-            <h1 className=" font-[600] text-[44px] absolute font-heading  w-[]  text-white">
-              What People Say About <br></br>Us
-            </h1>
+    <div className="h- text-black bg-[#EEEAFC] flex  items-center">
+    <div className="flex items-center w-[30%] ">
+      <div className="relative md:w-2/3   overflow-hidden">
+        <Image src={Title} />
+        <div className="absolute inset-0 opacity-50"></div>
+        <h1 className="text-white text-center z-10 mix-blend-normal absolute top-[25%] md:text-xl lg:text-4xl font-heading right-0">What People are Saying About Us</h1>
+      </div>
+    </div>
+  <div className="md:w-[80%] w-[70%]">
+      <div className=" font-heading">
+        <Image src={RevImage}/>
+        <p>Lorem ipsum dolor sit amet consectetur. Adipiscing ullamcorper fames mauris adipiscing amet egestas. Adipiscing cras duis sed tristique lectus orci bibendum. Massa massa feugiat egestas integer eget. Aenean fermentum interdum et eget diam vulputate. Risus ultricies lectus dolor enim. Mattis tellus diam lacus neque sit fusce montes. Adipiscing mauris orci.</p>
+        <div className="flex md:flex-row flex-col w-full items-center justify-end my-5">
+          <div className="mr-auto">
+            <h1 className="font-bold text-xl">Adam Samson</h1>
+            <p className="font-semibold">Senior Volunteer</p>
           </div>
-          <div className="">
-            <Image className="mb-4   " src={RevImage} alt="" />
-
-            <p className="font-[600] text-[24px]">
-              {" "}
-              It is long established fact that reader will distract by the
-              readable content a page when looking atten layout. The point of
-              using and that it has a normal distribution of letters
-            </p>
-
-            <div className="flex justify-between">
-              <div>
-                <h1 className=" font-heading  font-[500] text-[32px] ">
-                  Adam Samson
-                </h1>
-                <p className="text-[18px] font-[500]">Senior Volunteer</p>
-              </div>
-
-              <div className="flex  w-[60%]"></div>
-            </div>
+          <div className="bg-[#3A40D8] pl-14 pr-20 py-2 flex items-center ml-auto text-white">
+            <FaChevronLeft className="border rounded-full mx-2 text-2xl p-1"/>
+            <FaChevronRight className="border rounded-full text-2xl p-1 mx-2"/>
           </div>
         </div>
-      </Container>
+      </div>
     </div>
+  </div>
   );
 }
 

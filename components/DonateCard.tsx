@@ -5,11 +5,11 @@ import Button from "./Button";
 
 function DonateCard() {
   return (
-    <div className="max-w-[330px] font-body  shadow-md rounded-md ">
-      <Image className="rounded-md" src={CardImg} alt="" />
+    <div className="max-w-md min-w-md font-body  shadow-md rounded-md ">
+      <Image className="rounded-md w-full" src={CardImg} alt="" />
 
-      <div className="p-3">
-        <div className="flex justify-between ">
+      <div className="p-5">
+        <div className="flex flex-row  justify-between ">
           <div className=" text-[15px] font-[600] text-center">
             Goal <br />{" "}
             <span className=" text-[20px] text-primary"> $4000</span>{" "}

@@ -8,7 +8,7 @@ function BlogCarocel() {
         Latest News From <br></br> Sabi Blog
       </h1>
 
-      <div className="flex justify-center gap-5">
+      <div className="flex flex-col items-center md:flex-row text-black justify-center gap-5">
         <Blogcard />
         <Blogcard />
         <Blogcard />

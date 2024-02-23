@@ -10,7 +10,7 @@ function Herosection() {
     <div>
       <div className="lg:flex-row flex flex-col-reverse   gap-6  items-center justify-center   mt-20   ">
         <div className=" lg:w-[50%]  ">
-          <h1 className="  md:w-full w-[80%] mx-auto font-heading font-[700]   md:text-[45px] lg:text-[68px] lg:text-left  text-center  text-[23px] ">
+          <h1 className="  md:w-full w-[80%] mx-auto font-heading font-[700] text-black leading-normal  md:text-[45px] lg:text-[68px] lg:text-left  text-center  text-2xl ">
             We Need Your Powerful Hands To{" "}
             <span className="text-primary">Change </span> The World.
           </h1>
@@ -30,7 +30,7 @@ function Herosection() {
           How Could You Help?
         </h1>
 
-        <div className="flex  lg:flex-row  flex-col gap-8  justify-center mx-auto">
+        <div className="flex  lg:flex-row  flex-col items-center gap-8  justify-center mx-auto">
           <Card
             imagePath={
               <Image className=" my-auto" src={volunterr} alt="voluteer logo" />

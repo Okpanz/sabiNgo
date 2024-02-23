@@ -8,8 +8,8 @@ import elipse1 from "../../public/images/Ellipse 100.png"
 import elipse2 from "../../public/images/Ellipse 99.png"
 import elipse3 from "../../public/images/Ellipse 100 (1).png"
 import elipse4 from "../../public/images/Ellipse 99 (1).png"
-import man1 from "../../public/images/man1.png"
-import man2 from "../../public/images/man2.png"
+import man1 from "../../public/images/volunteer.jpeg"
+import man2 from "../../public/images/volunteer1.jpeg"
 import frame12 from "../../public/images/Frame 12.png"
 import avatar from "../../public/images/Frame 13.png"
 import Image from "next/image";
@@ -19,20 +19,15 @@ function Page() {
   const Volunteers = 
   [{
     id: "1",
-    image: <Image src={man1} className="w-72 md:pr-2 my-1" />,
+    image: <Image src={man1} className="" />,
     alt: "man1"
   },
   {
     id: "1",
-    image: <Image src={man2} className="w-72 md:pr-2 my-1" />,
+    image: <Image src={man2} className="" />,
     alt: "man1"
   },
-  {
-    id: "1",
-    image: <Image src={man1} className="w-72 md:pr-2 my-1" />,
-    alt: "man1"
-  },
-
+ 
 ]
 const Stat = [
   {
@@ -90,12 +85,12 @@ const Stat = [
   <h1 className="font-heading font-bold text-2xl text-center mt-10">Meet Our Volunteers</h1>
   <div className="flex md:flex-row flex-col items-center justify-evenly">
   {Volunteers.map(function(item) {
-    return (
-      <div key={item.id}>
-         <span className=""> {item.image}</span>
-        </div>
-      )
-    })}
+  return (
+    <div key={item.id} className="w-72 h-75 overflow-hidden">
+      <span  className="h-full object-cover">{item.image} </span>
+    </div>
+  );
+})}
     </div>
 </div>
 <div className="flex justify-around text-center font-heading h-full">
@@ -138,7 +133,6 @@ const Stat = [
         </div>
       </div>
     </>
-  // );
 }
 
 export default Page;

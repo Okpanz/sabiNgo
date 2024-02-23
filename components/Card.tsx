@@ -27,7 +27,7 @@ function Card({
         {ptage}
       </p>
 
-      <div className="  mt-8 font-montse font-[500] flex w-[50%] justify-center  border-primary border-2 rounded-lg py-[12px] px-[17px]  text-[16px] text-primary  mx-auto">
+      <div className="hover:bg-primary hover:text-white transition-all ease-in-out duration-300  cursor-pointer mt-8 font-montse font-[500] flex w-[50%] justify-center  border-primary border-2 rounded-lg py-[12px] px-[17px]  text-[16px] text-primary  mx-auto">
         Read more
       </div>
     </div>
