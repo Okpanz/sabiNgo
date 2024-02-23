@@ -8,7 +8,7 @@ function Blogcard() {
   return (
     <div>
       <div className="max-w-[330px] font-body  shadow-md rounded-md ">
-        <Image className="rounded-md" src={BlogImage} alt="" />
+        <Image className="rounded-md" src={BlogImage} alt="Blog image" />
 
         <div className="p-3">
           <div className="flex justify-between items-center ">
@@ -23,8 +23,7 @@ function Blogcard() {
           </div>
 
           <h1 className="text-[21px] font-[600] leading-8 mt-4 mb-2">
-            {" "}
-            Children Education Needs For Change The World.{" "}
+            Children Education Needs For Change The World.
           </h1>
           <p className="  text-[15px] font-body mb-4">
             Lorem Ipsum is simply dummy text of the industry's since the
