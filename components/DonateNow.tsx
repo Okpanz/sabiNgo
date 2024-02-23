@@ -12,12 +12,12 @@ function DonateNow() {
     <div className="">
       <div className=" bg-donate-pattern bg-cover py-20">
         <Container>
-          <div className="flex gap-8 justify-center">
-            <div>
+          <div className="flex gap-8 justify-center ">
+            <div className="md:inline hidden">
               <Image src={Donate} alt="donate" />
             </div>
-            <div className="w-[50%] mt-14  flex-row item-center">
-              <h2 className="  text-[45px] font-[600] font-heading">
+            <div className="md:w-[50%] mt-14  flex-row item-center">
+              <h2 className="  text-[45px] font-[600] font-heading text-black">
                 Sabi is a Non Profit Organization
               </h2>
               <p className=" my-6 font-body text-[20px] font-[500] text-[#414141] leading-7">
@@ -30,8 +30,8 @@ function DonateNow() {
                 dummy text ever since the 1500s, when an unknown.{" "}
               </p>
 
-              <h1 className=" w-[50%] my-11 font-body text-[24px] font-[600] font border-r-4 border-primary">
-                Need your simple <br></br> helpfor save children.
+              <h1 className=" w-[50%] text-black my-11 font-body text-[24px] font-[600] font border-r-4 border-primary">
+                Need your simple <br></br> help save children.
               </h1>
 
               <Button type="button" label="Donate now" color="primary" />
@@ -45,7 +45,7 @@ function DonateNow() {
           Donate For Poor People. <br /> Causes of Sabi{" "}
         </h1>
         <Container>
-          <div className="flex justify-center gap-5 my-11">
+          <div className="flex md:flex-row flex-col p-5 items-center justify-center gap-5 my-11 text-black">
             <DonateCard />
             <DonateCard />
             <DonateCard />
@@ -53,15 +53,15 @@ function DonateNow() {
         </Container>
       </div>
 
-      <div className="bg-[#EEEAFC] py-11">
+      <div className="bg-[#EEEAFC] text-black py-11">
         <Container>
-          <div className="flex justify-center gap-8">
+          <div className="flex md:flex-row flex-col md:w-auto  justify-center gap-8">
             <div>
               {" "}
               <Image src={NeedImage} alt="need" />{" "}
             </div>
 
-            <div className=" w-[40%]">
+            <div className=" md:w-[40%]">
               {" "}
               <h1 className="text-[40px] font-heading font-[600]">
                 Need Pure Water For Anglo Jos People.

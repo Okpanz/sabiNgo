@@ -7,8 +7,8 @@ function Event() {
   return (
     <div className="">
       <Container>
-        <div className="flex gap-5 justify-center py-24">
-          <div className=" w-[30%] ">
+        <div className="flex md:flex-row flex-col gap-5 justify-center md:py-24 text-black">
+          <div className=" md:w-[30%] ">
             <h1 className="font-heading text-[40px] font-[600]">
               Multiple Event & Conference
             </h1>
@@ -29,20 +29,20 @@ function Event() {
           </div>
         </div>
 
-        <div className=" mx-11 flex font-heading font-[600] justify-between">
+        <div className=" mx-11 my-2 text-black flex md:flex-row flex-col gap-3 font-heading font-[600] justify-between">
           <div className=" text-center ">
-            <p className="text-[64px]"> 520k </p>
-            <p className="text-[32px]"> Poor People</p>
+            <p className="md:text-5xl text-3xl"> 520k </p>
+            <p className="md:text-3xl"> Poor People</p>
           </div>
 
           <div className=" text-center ">
-            <p className="text-[64px]"> 842M </p>
-            <p className="text-[32px]"> Fund Rise</p>
+            <p className="md:text-5xl text-3xl"> 842M </p>
+            <p className="md:text-3xl"> Fund Rise</p>
           </div>
 
           <div className=" text-center ">
-            <p className="text-[64px]"> 24k </p>
-            <p className="text-[32px]"> Active Member</p>
+            <p className="md:text-5xl text-3xl"> 24k </p>
+            <p className="md:text-3xl"> Active Member</p>
           </div>
         </div>
       </Container>

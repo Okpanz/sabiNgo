@@ -8,6 +8,7 @@ import Facebook from "@/public/images/Social icon.png";
 import Linkedin from "@/public/images/Social icon (2).png";
 import Instagram from "@/public/images/Social icon (1).png";
 import Twitter from "@/public/images/Social icon (3).png";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa6";
 
 function Footer() {
   return (
@@ -16,7 +17,7 @@ function Footer() {
   "
     >
       <Container>
-        <div className="flex my-24  gap-20 w-[80%] py-11">
+        <div className="flex flex-col md:flex-row mx-auto justify-center my-24  gap-20 w-[80%] py-11">
           <div className=" w-[280px]">
             <Image src={Logo} alt="" />{" "}
             <p className=" leading-7 mt-4">
@@ -25,7 +26,7 @@ function Footer() {
             </p>
           </div>
           <div>
-            <h1 className="text-[24px] font-[500] ">Gallary</h1>
+            <h1 className="text-[24px] font-[500] ">Gallery</h1>
             <Image className=" mt-4" src={Gallary} alt=" " />
           </div>
           <div>
@@ -62,10 +63,10 @@ function Footer() {
           </div>
 
           <div className=" flex gap-4">
-            <Image src={Facebook} alt="" />
-            <Image src={Linkedin} alt="" />
-            <Image src={Instagram} alt="" />
-            <Image src={Twitter} alt="" />
+            <FaFacebook  className="hover:text-primary cursor-pointer transition-all ease-in-out duration-300" />
+            <FaLinkedin  className="hover:text-primary cursor-pointer transition-all ease-in-out duration-300"/>
+            <FaInstagram  className="hover:text-primary cursor-pointer transition-all ease-in-out duration-300"/>
+            <FaTwitter className="hover:text-primary cursor-pointer transition-all ease-in-out duration-300" />
           </div>
         </div>
       </Container>
