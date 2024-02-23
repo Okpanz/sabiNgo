@@ -8,29 +8,29 @@ import volunterr from "@/public/images/Icon.png";
 function Herosection() {
   return (
     <div>
-      <div className="flex  gap-6  items-center justify-center   mt-20   ">
-        <div className="w-[50%] ">
-          <h1 className="  font-heading font-[700] text-[68px]  ">
+      <div className="lg:flex-row flex flex-col-reverse   gap-6  items-center justify-center   mt-20   ">
+        <div className=" lg:w-[50%]  ">
+          <h1 className="  md:w-full w-[80%] mx-auto font-heading font-[700]   md:text-[45px] lg:text-[68px] lg:text-left  text-center  text-[23px] ">
             We Need Your Powerful Hands To{" "}
             <span className="text-primary">Change </span> The World.
           </h1>
-          <div className="flex gap-5 mt-6">
+          <div className="flex gap-5 mt-6   md:justify-left   justify-center">
             <Button type="button" label="All Causes" color="primary" />
             <Button type="button" label="Donate Now" color="secondry" />
           </div>
         </div>
         <div>
           {" "}
-          <Image src={Hero} alt="" />{" "}
+          <Image className="  lg-[] w-[80%]  mx-auto" src={Hero} alt="" />{" "}
         </div>
       </div>
 
       <div className=" my-9   mt-40">
-        <h1 className=" text-[40px]  text-center font-heading font-[600]  my-9">
+        <h1 className=" text-[40px]  text-center font-heading font-[600]  my-9  ">
           How Could You Help?
         </h1>
 
-        <div className="flex  gap-8  justify-center">
+        <div className="flex  lg:flex-row  flex-col gap-8  justify-center mx-auto">
           <Card
             imagePath={
               <Image className=" my-auto" src={volunterr} alt="voluteer logo" />

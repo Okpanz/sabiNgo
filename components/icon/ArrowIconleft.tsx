@@ -2,7 +2,7 @@ import React from "react";
 import { IconType } from "./type/icon.type";
 
 const arrowIconleft = ({
-  className = "h-4 w-4",
+  className = "lg:h-4 lg:w-4  h-2 w-2  ",
   color = "",
 }: IconType): JSX.Element => {
   return (
