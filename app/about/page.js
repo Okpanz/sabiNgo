@@ -49,32 +49,42 @@ const Stat = [
   return <>
   <Navbar />
     
-    <div className="bg-white h-full text-black">
-    <Image src={aboutframe} alt="about frame" />{" "}
+    <div className="bg-white  h-full text-black">
+    <Image src={aboutframe} alt="about frame" className="w-screen" />{" "}
     <div className="md:w-[80%] mx-auto py-10">
   <Container>
-      <h2 className="md:text-6xl text-3xl  font-heading font-semibold tracking-tighter leading-snug">Sabi NGO is a NON Profit Organisation</h2>
+      <h2 className="md:text-6xl text-3xl  font-heading font-semibold tracking-tighter leading-snug">Tandem Advocacy Group is a NON Profit Organisation</h2>
       <div className="md:flex items-stretch">
   <div className="flex-1 relative"> 
     <Image src={aboutkids} alt="image" layout="fill" objectFit="cover" className="h-full w-full" /> 
   </div>
   <div className="flex-1 md:mx-7">
     <p className="font-semibold font-heading">
-      Lorem ipsum dolor sit amet consectetur. Adipiscing ullamcorper fames mauris adipiscing amet egestas. Adipiscing cras duis sed tristique lectus orci bibendum. Massa massa feugiat egestas integer eget. Aenean fermentum interdum et eget diam vulputate. Risus ultricies lectus dolor enim. 
+    It is incredible how one small idea can grow into something truly special! 
+    Tandem Advocacy Group is rooted in the belief that we all have an inherent 
+    responsibility to make a meaningful difference in our community. 
     </p>
-    <p className="text-[.7rem] my-7 text-justify">Lorem ipsum dolor sit amet consectetur. Adipiscing ullamcorper fames mauris adipiscing amet egestas. Adipiscing cras duis sed tristique lectus orci bibendum. Massa massa feugiat egestas integer eget. Aenean fermentum interdum et eget diam vulputate. Risus ultricies lectus dolor enim. Mattis tellus diam lacus neque sit fusce montes. Adipiscing mauris orci.</p>
+    <p className="text-[.7rem] my-7 text-justify">
+    Here at Tandem Advocacy Group, we are driven to do our part in making the world a better place. We work with individuals, organizations and communities to address barriers that hinder access to available services while also advocating for the creation of services that are not available. We strive to build productive relationships and make a positive impact with all of our pursuits. We harness our skills and resources to successfully achieve our goals.
+
+      </p>
     <div className="flex flex-col md:flex-row  justify-evenly items-center">
       <div className="h-100 w-[18rem] m-1 h-[18rem] bg-[#E57373] relative rounded-md">
       <Image src={elipse1} alt="volunteer1" className="absolute top-7 left-10"/>
       <Image src={elipse2} alt="Volunteer" className="absolute top-0 overflow-hidden left-0"/>
       <h1 className="font-heading font-semibold text-xl text-white absolute top-9 left-14">Our Mission</h1>
-      <p className="text-wrap text-white text-xs absolute bottom-7 p-2">Lorem ipsum dolor sit amet consectetur. Adipiscing ullamcorper fames mauris adipiscing amet egestas. Adipiscing cras duis sed tristique lectus orci bibendum. Massa massa feugiat egestas integer eget. Aenean fermentum interdum et eget diam vulputate. Risus ultricies lectus dolor enim. Mattis tellus diam lacus neque sit fusce montes. Adipiscing mauris orci.</p>
+      <p className="text-wrap text-white text-xs absolute bottom-3 pt-2 pl-2 pr-1 text-justify">
+      At Tandem Advocacy Group, our mission is to create positive change in the world. Since our establishment in 2000, we have been dedicated to empowering individuals and communities through various initiatives. We believe in the power of collaboration and strive to build strong relationships with our partners and supporters. Together, we can make a real difference and transform lives. Join us on this journey towards a better future.
+        </p>
       </div>
       <div className="h-100 w-[18rem] m-1 h-[18rem] bg-[#FFB64C] relative rounded-md">
       <Image src={elipse3} alt="Volunteer" className="absolute top-7 left-10"/>
       <Image src={elipse4} alt="Volunteer" className="absolute top-0 overflow-hidden left-0"/>
-      <h1 className="font-heading font-semibold text-xl text-white absolute top-9 left-14">Our Mission</h1>
-      <p className="text-wrap text-white text-xs absolute bottom-7 p-2">Lorem ipsum dolor sit amet consectetur. Adipiscing ullamcorper fames mauris adipiscing amet egestas. Adipiscing cras duis sed tristique lectus orci bibendum. Massa massa feugiat egestas integer eget. Aenean fermentum interdum et eget diam vulputate. Risus ultricies lectus dolor enim. Mattis tellus diam lacus neque sit fusce montes. Adipiscing mauris orci.</p>
+      <h1 className="font-heading font-semibold text-xl text-white absolute top-9 left-14">Our Vision</h1>
+      <p className="text-wrap text-white text-xs absolute bottom-24 p-2">
+  We are a group of women from diverse backgrounds tht have come together to innovately develop mechanisms through
+  which barriers that hinder access to services can be overcomed
+        </p>
       </div>
     </div>
   </div>'
@@ -106,7 +116,7 @@ const Stat = [
       </div>
   </Container>
     </div>
-    <div className="h-screen bg-[#EEEAFC] flex items-center">
+    {/* <div className="h-screen bg-[#EEEAFC] flex items-center">
           <div className="flex items-center">
             <div className="relative w-2/3 overflow-hidden">
               <Image src={frame12} alt="frame"/>
@@ -130,7 +140,7 @@ const Stat = [
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
 }

@@ -18,7 +18,7 @@ function DonateNow() {
             </div>
             <div className="md:w-[50%] mt-14 flex-row item-center">
               <h2 className="text-[45px] font-[600] font-heading text-black">
-                Sabi is a Non Profit Organization
+              Tandem Advocacy Group is a Non Profit Organization
               </h2>
               <p className="my-6 font-body text-[20px] font-[500] text-[#414141] leading-7">
                 Lorem Ipsum is simply dummy text of the printing and typesetting

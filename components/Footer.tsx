@@ -1,20 +1,28 @@
 import React from "react";
 import Container from "@/components/Container";
 import Image from "next/image";
-import Logo from "@/public/images/LogoWhite.png";
+import Logo from "@/public/images/Logo1.png";
 import Gallary from "@/public/images/Images (1).png";
 import Link from "next/link";
+
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa6";
 
 function Footer() {
+  // const date = Date.Now()
   return (
     <div className="bg-[#2A2A2A] text-[18px] font-[500] font-body text-white">
       <Container>
         <div className="flex flex-col md:flex-row mx-auto justify-center my-24 gap-20 w-[80%] py-11">
-          <div className="w-[280px]">
-            <Image src={Logo} alt="Logo" />
-            <p className="leading-7 mt-4">
-              Lorem Ipsum is simply dummy text of the industry's since the unknown. Lorem Ipsum is simply dummy text of the industry.
+          <div className="w-[280px] ">
+            <div className="md:flex flex-col items-left">
+            <Image src={Logo} alt="Logo" className="w-20" />
+            <h2 className="font-bold">
+            Tandem Advocacy Group
+            </h2>
+            </div>
+            <p className="mt-4 text-sm text-justify ">
+            Here at Tandem Advocacy Group, we are driven to do our part in making the world a better place. We work with individuals, organizations and communities to address barriers that hinder access to available services while also advocating for the creation of services that are not available.
+           <Link href="/about" className="mx-2 inline text-xs italic text-primary">read more</Link>
             </p>
           </div>
           <div>
@@ -44,7 +52,7 @@ function Footer() {
       <Container>
         <div className="flex justify-between py-5">
           <div>
-            © All right reserved 2024 <span className="text-primary">Sabi NGO</span>
+            © All right reserved 2024 <span className="text-primary">Tandem Advocacy Group</span>
           </div>
           <div className="flex gap-4">
             <FaFacebook className="hover:text-primary cursor-pointer transition-all ease-in-out duration-300" />

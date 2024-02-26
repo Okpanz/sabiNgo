@@ -26,11 +26,12 @@ function Button({
   onClick?: (...params: any) => void;
 }) {
   return (
+    
     <button
       type={type}
       disabled={disabled} // Corrected "disable" to "disabled"
       className={clsx(
-        "flex font-montse font-[500] gap-1 py-[12px] px-[17px] lg:text-[16px] md:text-[12px] text-[9px] rounded-lg whitespace-nowrap items-center wrap border-primary border-2 white",
+        "flex font-montse font-[500] gap-1 py-[12px] px-[17px] lg:text-[16px] md:text-[12px] text-[9px] rounded-lg whitespace-nowrap items-center transition-all ease-in-out duration-300  wrap border-primary border-2 white",
         classes || "",
         disabled ? "opacity-40 hover:!opacity-40 pointer-events-none" : "",
         btnColor[color] || ""
