@@ -6,9 +6,9 @@ import contact from "../../public/images/contact.png";
 
 function Page() {
   return (
-    <div>
+    <div className="bg-white">
       <Navbar />
-      <Image src={contact} />
+      <Image src={contact} className="w-screen" />
       <div className="bg-white">
         <Container>
           <div className="md:flex md:flex-row flex-col py-10 overflow-hidden">
