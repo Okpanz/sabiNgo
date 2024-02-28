@@ -8,16 +8,16 @@ import Link from "next/link";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa6";
 
 function Footer() {
-  // const date = Date.Now()
+  const date = new Date()
+  const fullYear = date.getFullYear()
   return (
     <div className="bg-[#2A2A2A] text-[18px] font-[500] font-body text-white">
       <Container>
         <div className="flex flex-col md:flex-row mx-auto justify-center my-24 gap-20 w-[80%] py-11">
           <div className="w-[280px] ">
             <div className="md:flex flex-col items-left">
-            <Image src={Logo} alt="Logo" className="w-20" />
+            <Image src={Logo} alt="Logo" className="w-28" />
             <h2 className="font-bold">
-            Tandem Advocacy Group
             </h2>
             </div>
             <p className="mt-4 text-sm text-justify ">
@@ -50,9 +50,9 @@ function Footer() {
       </Container>
       <div className="bg-white h-2"></div>
       <Container>
-        <div className="flex justify-between py-5">
+        <div className="flex justify-between py-5 text-xs">
           <div>
-            © All right reserved 2024 <span className="text-primary">Tandem Advocacy Group</span>
+            © All right reserved {fullYear} <span className="text-primary">Tandem Advocacy Group</span>
           </div>
           <div className="flex gap-4">
             <FaFacebook className="hover:text-primary cursor-pointer transition-all ease-in-out duration-300" />

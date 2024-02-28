@@ -24,8 +24,7 @@ function Navbar() {
         <div className="flex lg:py-[10px]   pt-[10px] justify-between items-center ">
           {" "}
           <div className="flex flex-col items-center">
-          <Image className="w-[62px]  " alt="" src={logo} />{" "}
-        <h2 className="font-semibold tracking-tighter">Tandem Advocacy Group</h2>
+          <Image className="w-32  " alt="" src={logo} />{" "}
           </div>
           <div className="flex items-center  ">
             <ul className="lg:flex    hidden  font-montse font-[500] text-[18px] gap-16    ">
